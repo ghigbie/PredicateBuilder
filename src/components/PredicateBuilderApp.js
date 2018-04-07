@@ -4,7 +4,7 @@ class PredicateBuilderApp extends Component{
     render(){
         return(
             <div>
-                <h1>Add dogs are awesome!</h1>
+                <h1>All dogs are awesome!</h1>
             </div>
         );
     }
