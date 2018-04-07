@@ -1,6 +1,7 @@
-const express = require('express'),
-         path = require('path');
-          app = express();
+import express from 'express';
+import path from 'path';
+
+const app = express();
           
 const publicPath = path.join(__dirname, '..', 'public');
 
