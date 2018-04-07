@@ -1,15 +1,8 @@
 console.log('app js js is running!');
-import React, { Component } from 'react';
-import ReactDom from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import PredicateBuilderApp from './components/PredicateBuilderApp.js';
 
-class PredicateBuilderApp extends Component{
-    render(){
-        return(
-            <div>
-                <h1>Add dogs are awesome!</h1>
-            </div>
-        );
-    }
-}
-
-export default PredicateBuilderApp;
+const appRoot = document.getElementById('react-container');
+ReactDOM.render(<PredicateBuilderApp />, appRoot);

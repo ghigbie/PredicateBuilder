@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: /home/ubuntu/workspace/predicate-builder/src/app.js Unexpected token (8:12)\nYou may need an appropriate loader to handle this file type.\n|     render(){\n|         return(\n|             <div>\n|                 <h1>Add dogs are awesome!</h1>\n|             </div>");
+throw new Error("Module parse failed: /home/ubuntu/workspace/predicate-builder/src/app.js Unexpected token (8:16)\nYou may need an appropriate loader to handle this file type.\n| \n| const appRoot = document.getElementById('react-container');\n| ReactDOM.render(<PredicateBuilderApp />, appRoot);");
 
 /***/ })
 /******/ ]);
