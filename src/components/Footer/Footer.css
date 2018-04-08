@@ -2,15 +2,19 @@
     margin-bottom: 1%;
 }
 
-.grey-text{
+p.grey-text{
+    width: 50%;
     color: #959595;
     font-weight: bold;
 }
 
-.footer-button{
-    margin: 0 10% 10% 0;
+.button-holder{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.button-wide{
+button.button-wide{
     width: 33%;
+    margin-left: 5%;
 }
