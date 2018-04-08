@@ -8,7 +8,7 @@ class PredicateBuilderApp extends Component{
         return(
             <div className="container-fluid">
                 <Header />
-                <h1>All dogs are awesome!</h1>
+                <h1>This is a body</h1>
                 <Footer />
             </div>
         );
