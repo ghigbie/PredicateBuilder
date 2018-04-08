@@ -7,6 +7,10 @@
     font-weight: bold;
 }
 
+.footer-button{
+    margin: 0 10% 10% 0;
+}
+
 .button-wide{
     width: 33%;
 }
