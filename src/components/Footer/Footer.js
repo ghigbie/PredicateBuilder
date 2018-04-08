@@ -3,11 +3,11 @@ import React from 'react';
 const Footer = () => {
     return(
         <div>
-            <h3>Returned 4999 results</h3>
+            <span><p>Returned 4999 results</p></span>
             <span>
-                <button>Export</button>
-                <button>Save Preset</button>
-                <button>Search</button>
+                <button className="btn btn-sm">Export</button>
+                <button className="btn btn-light btn-sm">Save Preset</button>
+                <button className="btn btn-primary btn-sm">Search</button>
             </span>
         </div>
     );
