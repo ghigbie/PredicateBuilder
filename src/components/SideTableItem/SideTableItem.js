@@ -3,13 +3,13 @@ import './SideTableItem.css';
 
 const SideTableItem = (props) => {
     return(
-        <div>
+        <table>
             <p>{props.title}</p>
             <tr>
-                <td>{`{props.count}k`}</td>
-                <td>{`${props.amount}`}</td>
+                <td>{`${props.count}k`}</td>
+                <td>{`$${props.amount}`}</td>
             </tr>
-        </div>
+        </table>
     );
 };
 
