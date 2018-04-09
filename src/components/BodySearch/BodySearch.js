@@ -31,7 +31,8 @@ class BodySearch extends Component{
                 <input type="text" placeholder="Please select" />
                 <button>And</button>
                 <input type="text" placeholder="Please select" />
-                <button className="btn btn-primary d-block">Add</button>
+                <button className="btn btn-primary d-block"
+                        id="and-button">Add</button>
             </div>
         );
     }
