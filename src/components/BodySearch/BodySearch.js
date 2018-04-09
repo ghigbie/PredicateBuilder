@@ -44,6 +44,6 @@ class BodySearch extends Component{
             </div>
         );
     }
-};
+}
 
 export default BodySearch;
