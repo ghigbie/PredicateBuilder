@@ -11,12 +11,12 @@ const DropdownButton = (props) => {
                data-toggle="dropdown" 
                aria-haspopup="true" 
                aria-expanded="false">
-               Dropdown link
+               {props.dropdownTitle}
             </a>
                 
-            <div clasName="dropdown-menu" 
+            <div className="dropdown-menu" 
                  aria-labelledby="dropdownMenuLink">
-                {props.fields.map((field, index) => <a key={index} className="dropdown-item" href="#">{field}</a>)}
+                {props.listItems.map((item, index) => <a key={index} className="dropdown-item" href="#">{item}</a>)}
             </div>
         </div>  
     );
