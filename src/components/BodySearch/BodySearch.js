@@ -27,10 +27,12 @@ class BodySearch extends Component{
                 <button className="btn btn-basic">-</button>
                 <DropdownButton listItems={this.subjectFields}
                                 dropdownTitle={this.searchTitle}
-                                className="d-inline row-item" />
-                <DropdownButton listItems={this.sqlItems}
-                                dropdownTitle={this.sqlTitle}
-                                className="d-inline row-item" />
+                                className="d-inline" />
+                <div className="d-inline row-item">
+                    <DropdownButton listItems={this.sqlItems}
+                                    dropdownTitle={this.sqlTitle}
+                                    className="d-inline" />
+                </div>
                 <input className="form-control d-inline row-item input-item"
                        type="text" 
                        placeholder="Please select" />
