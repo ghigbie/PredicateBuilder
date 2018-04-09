@@ -18,7 +18,7 @@ class BodySearch extends Component{
             <div>
                 <button>+</button>
                 <button className="btn btn-secondary dropdown-toggle">
-                    {this.predicateFieldBuilder}
+                    {this.predicateFields.map((field, index) =>  <a key={index} className="dropdown-item" href="#">{field}</a> )}
                 </button>
                 <button className="btn btn-secondary dropdown-toggle"></button>
                 <input type="text" placeholder="Please select" />
