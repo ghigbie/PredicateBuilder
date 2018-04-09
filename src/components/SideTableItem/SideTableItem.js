@@ -4,9 +4,9 @@ import './SideTableItem.css';
 const SideTableItem = (props) => {
     return(
         <div>
-            <p>{props.title}</p>
-            <span>{`${props.count}k`}</span>
-            <span>{`$${props.amount}`}</span>
+            <p className="title">{props.title}</p>
+            <span className="count">{`${props.count}k`}</span>
+            <span className="amount">{`$${props.amount}`}</span>
             <hr />
         </div>
     );

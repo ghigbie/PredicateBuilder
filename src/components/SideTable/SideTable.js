@@ -23,7 +23,6 @@ const SideTable = () => {
     
     return(
         <div className="side-table">
-            <h1>This is the sidetable</h1>
             {addSideTabelItems}
         </div>
     );
