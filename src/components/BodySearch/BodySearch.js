@@ -24,13 +24,18 @@ class BodySearch extends Component{
                 <button className="btn btn-basic">+</button>
                 <DropdownButton listItems={this.predicateFields}
                                 dropdownTitle={this.searchTitle}
-                                className="d-inline" />
+                                className="d-inline row-item" />
                 <DropdownButton listItems={this.sqlItems}
                                 dropdownTitle={this.sqlTitle}
-                                className="d-inline" />
-                <input type="text" placeholder="Please select" />
-                <button>And</button>
-                <input type="text" placeholder="Please select" />
+                                className="d-inline row-item" />
+                <input className="form-control d-inline row-item input-item"
+                       type="text" 
+                       placeholder="Please select" />
+                <button className="btn btn-default row-item">
+                        And</button>
+                <input className="form-control d-inline row-item input-item"
+                       type="text" 
+                       placeholder="Please select" />
                 <button className="btn btn-primary d-block"
                         id="and-button">Add</button>
             </div>
