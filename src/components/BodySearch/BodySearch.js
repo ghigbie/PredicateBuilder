@@ -17,9 +17,16 @@ class BodySearch extends Component{
         return(
             <div>
                 <button className="btn btn-basic">+</button>
+                <DropdownButton fields={this.predicateFields} />
                 
                 <div className="dropdown show d-inline">
-                  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a className="btn btn-secondary dropdown-toggle" 
+                     href="#" 
+                     role="button" 
+                     id="dropdownMenuLink" 
+                     data-toggle="dropdown" 
+                     aria-haspopup="true" 
+                     aria-expanded="false">
                     Dropdown link
                   </a>
                 
