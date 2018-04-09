@@ -24,23 +24,25 @@ class BodySearch extends Component{
     render(){
         return(
             <div>
-                <button className="btn btn-basic">-</button>
-                <DropdownButton listItems={this.subjectFields}
-                                dropdownTitle={this.searchTitle}
-                                className="d-inline" />
-                <div className="d-inline row-item">
-                    <DropdownButton listItems={this.sqlItems}
-                                    dropdownTitle={this.sqlTitle}
+                <div className="input-group">
+                    <button className="btn btn-basic">-</button>
+                    <DropdownButton listItems={this.subjectFields}
+                                    dropdownTitle={this.searchTitle}
                                     className="d-inline" />
+                    <div className="d-inline row-item">
+                        <DropdownButton listItems={this.sqlItems}
+                                        dropdownTitle={this.sqlTitle}
+                                        className="d-inline" />
+                    </div>
+                    <input className="form-control d-inline row-item input-item"
+                           type="text" 
+                           placeholder="Please select" />
+                    <button className="btn btn-default row-item">
+                            And</button>
+                    <input className="form-control d-inline row-item input-item"
+                           type="text" 
+                           placeholder="Please select" />
                 </div>
-                <input className="form-control d-inline row-item input-item"
-                       type="text" 
-                       placeholder="Please select" />
-                <button className="btn btn-default row-item">
-                        And</button>
-                <input className="form-control d-inline row-item input-item"
-                       type="text" 
-                       placeholder="Please select" />
                 <button className="btn btn-primary d-block"
                         id="and-button">Add</button>
             </div>
