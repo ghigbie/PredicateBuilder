@@ -16,7 +16,7 @@ const DropdownButton = (props) => {
                 
             <div className="dropdown-menu" 
                  aria-labelledby="dropdownMenuLink">
-                {props.listItems.map((item, index) => <a key={index} className="dropdown-item" href="#">{item}</a>)}
+                {props.listItems.map((item, index) => <a key={index} className="dropdown-item" href="#">{item.name}</a>)}
             </div>
         </div>  
     );
