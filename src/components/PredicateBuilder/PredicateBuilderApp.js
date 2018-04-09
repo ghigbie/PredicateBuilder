@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './PredicateBuilderApp.css';
 
 import Header from './../Header/Header';
+import Body from './../Body/Body'
 import Footer from './../Footer/Footer';
 
 class PredicateBuilderApp extends Component{
@@ -9,7 +10,7 @@ class PredicateBuilderApp extends Component{
         return(
             <div className="container-fluid main-app">
                 <Header />
-                <h1>This is a body</h1>
+                <Body />
                 <Footer />
             </div>
         );
