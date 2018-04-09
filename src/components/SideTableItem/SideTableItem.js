@@ -6,8 +6,8 @@ const SideTableItem = (props) => {
         <div>
             <p>{props.title}</p>
             <tr>
-                <td>{props.count}</td>
-                <td>{props.amount}</td>
+                <td>{`{props.count}k`}</td>
+                <td>{`${props.amount}`}</td>
             </tr>
         </div>
     );
