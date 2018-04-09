@@ -1,3 +1,18 @@
+.side-table-item{
+    text-align: center;
+}
+
 p.title{
     text-align: center;
+}
+
+.count{
+    width: 50%;
+    border-right: 1px solid #959595;
+    padding-right: 3%;
+}
+
+.amount{
+    width: 50%;
+    padding-left: 10%;
 }
