@@ -8,6 +8,7 @@ class BodySearch extends Component{
         super(props);
         
         this.predicateFields = ['User email', 'screen width', 'screen heigth', '# of visits', 'First Name', 'Last Name', 'Page Response time (ms)', 'Domain', 'Page Path'];
+        this.sqlItems = ['id', 'user_email', 'user_first_name', 'user_last_name', 'screen_width', 'screen_heigth', 'visit', 'page_Response', 'domain', 'path'];
         this.searchTitle = 'Search';
         this.sqlTitle = 'SQL Search';
         this.predicateFieldBuilder = this.predicateFieldBuilder.bind(this);
@@ -21,10 +22,10 @@ class BodySearch extends Component{
         return(
             <div>
                 <button className="btn btn-basic">+</button>
-                <DropdownButton items={this.predicateFields}
+                <DropdownButton listItems={this.predicateFields}
                                 dropdownTitle={this.searchTitle}
                                 className="d-inline" />
-                <DropdownButton items={this.sqlItems}
+                <DropdownButton listItems={this.sqlItems}
                                 dropdownTitle={this.sqlTitle}
                                 className="d-inline" />
                 <input type="text" placeholder="Please select" />
