@@ -19,7 +19,7 @@ const SideTable = () => {
     ];
     
     
-    const addSideTabelItems = sideTableObjects.map( (item) => <SideTableItem title={item.title} count={item.count} amount={item.amount} />);
+    const addSideTabelItems = sideTableObjects.map( (item, index) => <SideTableItem key={index} title={item.title} count={item.count} amount={item.amount} />);
     
     return(
         <div className="side-table">

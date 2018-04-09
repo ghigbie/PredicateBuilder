@@ -7,7 +7,7 @@ const SideTableItem = (props) => {
             <p>{props.title}</p>
             <span>{`${props.count}k`}</span>
             <span>{`$${props.amount}`}</span>
-            <br />
+            <hr />
         </div>
     );
 };
