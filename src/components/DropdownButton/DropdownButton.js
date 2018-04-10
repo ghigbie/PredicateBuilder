@@ -3,23 +3,13 @@ import './DropdownButton.css';
 
 const DropdownButton = (props) => {
     return(
-        <div className="dropdown show d-inline">
-            <a className="btn btn-secondary dropdown-toggle" 
-               href="#" 
-               role="button" 
-               id="dropdownMenuLink" 
-               data-toggle="dropdown" 
-               aria-haspopup="true" 
-               aria-expanded="false">
-               {props.dropdownTitle}
-            </a>
-                
-            <div className="dropdown-menu" 
-                 aria-labelledby="dropdownMenuLink">
-                 {props.listItems.map((item, index) => <a key={index} className="dropdown-item" 
-                                                                      href="#" >
-                                                                      {item.name}</a>)}
-            </div>
+        
+        <div className="dropdown d-inline">
+            <select className="custom-select">
+                <option defaultValue>Choose...</option>
+                {props.listItems.map((item, index) => <option key={index} 
+                                                              value={item.name}>{item.name}</option>)}
+            </select>
         </div>  
     );
 };
