@@ -15,22 +15,22 @@ const subjectFields = [
                 
             },
             {
-                name: 'screen widith',
+                name: 'Screen Width',
                 type: 'number'
                 
             },
             {
-                name: 'screen height',
+                name: 'Screen Height',
                 type: 'number'
                 
             },
             {
-                name: '# of visits',
+                name: '# of Visits',
                 type: 'number'
                 
             },
             {
-                name: 'Page Response time (ms)',
+                name: 'Page Response Time (ms)',
                 type: 'number'
                 
             },
