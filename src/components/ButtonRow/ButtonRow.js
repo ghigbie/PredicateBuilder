@@ -3,19 +3,19 @@ import './ButtonRow.css';
 
 import DropdownButton from './../DropdownButton/DropdownButton';
 
-                               
 class ButtonRow extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            isWord: true
+        };
+    }
+    
     render(){
         return(
             <div className="input-group row-item">
                     <DropdownButton listItems={this.props.subjectFields}
                                     className="d-inline" />
-                    
-                    
-                        <div className="d-inline row-item">
-                            <DropdownButton listItems={this.props.sqlItems}
-                                            className="d-inline" />
-                        </div>
                     
                     <input className="form-control d-inline row-item input-item"
                            type="text" 
