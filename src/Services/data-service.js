@@ -25,7 +25,7 @@ const subjectFields = [
                 
             },
             {
-                name: '# of Visits',
+                name: 'User # of Visits',
                 type: 'number'
                 
             },
