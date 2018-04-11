@@ -27,11 +27,10 @@ class BodySearch extends Component{
         this.setState((prevState) => ({rows: prevState.rows.concat(this.state.count)}));
     }
     
-    handleRemoveRow(index){
-        console.log('handle remove row called');
-        this.setState((prevState) => {
-            return {rows: prevState.rows.filter(index)};
-        });
+    handleRemoveRow(indexToRemove){
+        this.setState((prevState) => ({
+            rows: prevState.rows.filter((index) => indexToRemove !== index)
+        }));
     }
     
     render(){
@@ -42,7 +41,7 @@ class BodySearch extends Component{
                           className="button-row ">
                         <div className="d-inline-block">
                             <button className="btn btn-basic"
-                                    onClick={this.handleRemoveRow}>-</button>
+                                    onClick={(e) => {this.handleRemoveRow(index);}}>-</button>
                         </div>
                         <div className="d-inline-block">
                         <ButtonRow subjectFields={this.subjectFields}
