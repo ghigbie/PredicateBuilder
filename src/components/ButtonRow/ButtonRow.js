@@ -16,9 +16,9 @@ class ButtonRow extends Component{
     
     handleChange(e){
         console.log('Moo1', this.state.searchTerm);
-        this.setState(
-            {searchTerm:  e.target.value}
-        );
+        // this.setState(
+        //     {searchTerm:  e.target.value}
+        // );
         console.log('Moo1', this.state.searchTerm);
     }
     

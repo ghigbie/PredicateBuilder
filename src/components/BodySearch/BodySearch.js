@@ -47,7 +47,6 @@ class BodySearch extends Component{
                                    verbWords={this.verbWords}
                                    verbNumbers={this.verbNumbers}
                                    className=""/>
-                    
                     </div>))}
                 
                 <button className="btn btn-primary d-block"
