@@ -32,9 +32,7 @@ class BodySearch extends Component{
     
     handleAddRow(){
         this.setState((prevState) => {count: prevState.count++});
-        this.setState((prevState) => {
-            return {rows: prevState.rows.concat(this.state.count)};
-        });
+        this.setState((prevState) => ({rows: prevState.rows.concat(this.state.count)}));
     }
     
     handleRemoveRow(index){
