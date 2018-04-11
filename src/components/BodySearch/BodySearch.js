@@ -33,7 +33,7 @@ class BodySearch extends Component{
     
     render(){
         return(
-            <div>
+            <div className="fixed-height">
                 {this.state.rows.map((row, index) => 
                     (<div key={index}
                           className="button-row flex">
