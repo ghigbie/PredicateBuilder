@@ -49,7 +49,7 @@ class BodySearch extends Component{
             <div>
                 {this.state.rows.map((row, index) => 
                     (<div key={index}
-                          className="d-block">
+                          className="d-block button-row">
                         <ButtonRow subjectFields={this.subjectFields}
                                    sqlItems={this.sqlItems}
                                    verbWords={this.verbWords}
