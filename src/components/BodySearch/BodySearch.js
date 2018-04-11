@@ -17,8 +17,8 @@ class BodySearch extends Component{
         this.handleAddRow = this.handleAddRow.bind(this);
         this.handleRemoveRow = this.handleRemoveRow.bind(this);
         this.state = {
-            rows: [1],
-            count: 1
+            rows: [0],
+            count: 0
         };
     }
     
@@ -37,10 +37,10 @@ class BodySearch extends Component{
         });
     }
     
-    handleRemoveRow(){
+    handleRemoveRow(index){
         console.log('handle remove row called');
-        this.setState(() => {
-            rows: bools
+        this.setState((prevState) => {
+            return {rows: prevState.rows.filter(index)};
         });
     }
     
@@ -50,6 +50,8 @@ class BodySearch extends Component{
                 {this.state.rows.map((row, index) => 
                     (<div key={index}
                           className="d-block button-row">
+                        <button className="btn btn-basic d-inline"
+                                onClick={this.handleRemoveRow}>-</button>
                         <ButtonRow subjectFields={this.subjectFields}
                                    sqlItems={this.sqlItems}
                                    verbWords={this.verbWords}

@@ -7,8 +7,6 @@ import DropdownButton from './../DropdownButton/DropdownButton';
 const ButtonRow = (props) => {
     return(
         <div className="input-group">
-            <button className="btn btn-basic"
-                    onClick={props.removeRow}>-</button>
                 <DropdownButton listItems={props.subjectFields}
                                 className="d-inline" />
                                 
