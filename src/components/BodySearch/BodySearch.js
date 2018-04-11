@@ -22,14 +22,6 @@ class BodySearch extends Component{
         };
     }
     
-    handleVisibility(){
-      this.setState((prevState) => {
-          return {
-              visibility: !prevState.visibility
-          };
-      });
-    }
-    
     handleAddRow(){
         this.setState((prevState) => {count: prevState.count++});
         this.setState((prevState) => ({rows: prevState.rows.concat(this.state.count)}));
