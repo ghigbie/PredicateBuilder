@@ -7,18 +7,21 @@ const SearchNumber= (props) => {
     return(
         <div className="flex">
         
-            <button className="btn btn-default row-item">Is</button>
+            <button className="btn btn-default d-inline row-item">Is</button>
             
-            <div className="d-inline row-item">
-                <DropdownButton listItems={props.verbNumbers}
-                                className="d-inline row-item" />
-            </div>
             
-            <button className="btn btn-default row-item">And</button>
+            <DropdownButton listItems={props.verbNumbers}
+                            className="d-inline row-item" />
+            
+            <input className="form-control d-inline row-item input-item"
+                   type="text" 
+                   placeholder="" />
+            
+            <button className="btn btn-default d-inline row-item">And</button>
                     
             <input className="form-control d-inline row-item input-item"
                    type="text" 
-                   placeholder="Please select" />
+                   placeholder="100" />
         </div>
             
     );

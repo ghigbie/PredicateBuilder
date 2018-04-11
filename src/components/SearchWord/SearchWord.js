@@ -13,10 +13,11 @@ const SearchWord = (props) => {
             </div>
             
             <div className="d-inline row-item">
+            
             <input className="form-control d-inline row-item input-item"
                    id="word-search"
                    type="text" 
-                   placeholder="Please select" />
+                   placeholder="" />
             </div>
         </div>
             
