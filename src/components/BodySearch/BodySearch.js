@@ -46,7 +46,7 @@ class BodySearch extends Component{
                                    sqlItems={this.sqlItems}
                                    verbWords={this.verbWords}
                                    verbNumbers={this.verbNumbers}
-                                   className=""/>
+                                   className="d-inline"/>
                     </div>))}
                 
                 <button className="btn btn-primary d-block"

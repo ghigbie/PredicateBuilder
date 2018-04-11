@@ -7,3 +7,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+.max-wide{
+   max-width: 150px; 
+}
