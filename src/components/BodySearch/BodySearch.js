@@ -12,8 +12,6 @@ class BodySearch extends Component{
         this.sqlItems = sqlItems;
         this.verbWords = verbWords;
         this.verbNumbers = verbNumbers;
-        this.searchTitle = 'Search';
-        this.sqlTitle = 'SQL Search';
         this.handleAddRow = this.handleAddRow.bind(this);
         this.handleRemoveRow = this.handleRemoveRow.bind(this);
         this.state = {
@@ -38,21 +36,19 @@ class BodySearch extends Component{
             <div>
                 {this.state.rows.map((row, index) => 
                     (<div key={index}
-                          className="button-row">
-                        <div className="d-inline-block">
-                            <button className="btn btn-basic"
-                                    onClick={(e) => {this.handleRemoveRow(index);}}>-</button>
-                        </div>
-                        <div className="d-inline-block">
+                          className="button-row flex">
+                        
+                        <button className="btn btn-basic flex"
+                                onClick={(e) => {this.handleRemoveRow(index);}}>-</button>
+                        
+                    
                         <ButtonRow subjectFields={this.subjectFields}
                                    sqlItems={this.sqlItems}
                                    verbWords={this.verbWords}
                                    verbNumbers={this.verbNumbers}
-                                   searchTitle={this.searchTitle}
-                                   sqlTitle={this.sqlTitle}
                                    removeRow={this.handleRemoveRow}
-                                   className="d-inline button-row"/>
-                        </div>
+                                   className=""/>
+                    
                     </div>))}
                 
                 <button className="btn btn-primary d-block"

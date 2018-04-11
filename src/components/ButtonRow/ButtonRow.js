@@ -9,7 +9,7 @@ class ButtonRow extends Component{
     constructor(props){
         super(props);
         this.state = {
-            isWord: false
+            isWord: true
         };
     }
     
@@ -19,23 +19,19 @@ class ButtonRow extends Component{
                             sqlItems={this.props.sqlItems}
                             verbWords={this.props.verbWords}
                             verbNumbers={this.props.verbNumbers}
-                            searchTitle={this.props.searchTitle}
-                            sqlTitle={this.props.sqlTitle}
                             removeRow={this.props.handleRemoveRow}
-                            className="d-inline button-row"/>);
+                            className="button-row"/>);
         
         const searchNumber = (
                 <SearchNumber subjectFields={this.props.subjectFields}
                               sqlItems={this.props.sqlItems}
                               verbWords={this.props.verbWords}
                               verbNumbers={this.props.verbNumbers}
-                              searchTitle={this.props.searchTitle}
-                              sqlTitle={this.props.sqlTitle}
                               removeRow={this.props.handleRemoveRow}
-                              className="d-inline button-row"/>);
+                              className="button-row"/>);
         
         return(
-            <div className="input-group row-item">
+            <div className="input-group row-item flex">
                     
                     <DropdownButton listItems={this.props.subjectFields}
                                     className="d-inline" />

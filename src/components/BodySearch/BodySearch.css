@@ -17,3 +17,9 @@
     max-width: 150px;
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+

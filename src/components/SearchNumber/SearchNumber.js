@@ -1,10 +1,11 @@
 import React from 'react';
+import './SearchNumber.css';
 
 import DropdownButton from './../DropdownButton/DropdownButton';
 
 const SearchNumber= (props) => {
     return(
-        <div>
+        <div className="flex">
         
             <button className="btn btn-default row-item">Is</button>
             
