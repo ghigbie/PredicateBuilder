@@ -9,29 +9,39 @@ class ButtonRow extends Component{
     constructor(props){
         super(props);
         this.state = {
-            isWord: true
+            isWord: false
         };
     }
     
     render(){
+        const searchWord = (
+                <SearchWord subjectFields={this.props.subjectFields}
+                            sqlItems={this.props.sqlItems}
+                            verbWords={this.props.verbWords}
+                            verbNumbers={this.props.verbNumbers}
+                            searchTitle={this.props.searchTitle}
+                            sqlTitle={this.props.sqlTitle}
+                            removeRow={this.props.handleRemoveRow}
+                            className="d-inline button-row"/>);
+        
+        const searchNumber = (
+                <SearchNumber subjectFields={this.props.subjectFields}
+                              sqlItems={this.props.sqlItems}
+                              verbWords={this.props.verbWords}
+                              verbNumbers={this.props.verbNumbers}
+                              searchTitle={this.props.searchTitle}
+                              sqlTitle={this.props.sqlTitle}
+                              removeRow={this.props.handleRemoveRow}
+                              className="d-inline button-row"/>);
+        
         return(
             <div className="input-group row-item">
                     
                     <DropdownButton listItems={this.props.subjectFields}
                                     className="d-inline" />
                     
-                    {this.state.isWord && <div className="d-inline"> <DropdownButton listItems={this.props.subjectFields}
-                                                          className="d-inline" />}
+                    {this.state.isWord ? searchWord : searchNumber}
                                                           
-                    <input className="form-control d-inline row-item input-item"
-                           type="text" 
-                           placeholder="Please select" />
-                           
-                    <button className="btn btn-default row-item">And</button>
-                    
-                    <input className="form-control d-inline row-item input-item"
-                           type="text" 
-                           splaceholder="Please select" />
             </div>
         );
     }
