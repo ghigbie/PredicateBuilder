@@ -16,12 +16,14 @@ class ButtonRow extends Component{
     
     handleChange(event){
         let isWordEntered;
+        let newValue = event.target.value;
+        console.log(event.target.value);
         if(['User email','First Name','Last Name','Domain','Path'].includes(event.target.value)){
             isWordEntered = true;
         }else{
             isWordEntered = false;
         }
-        this.setState(() => ({isWord: isWordEntered, value: event.taret.value}));
+        this.setState(() => ({isWord: isWordEntered, value: newValue}));
     }
     
     render(){

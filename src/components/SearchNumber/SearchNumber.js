@@ -4,18 +4,6 @@ import './SearchNumber.css';
 import DropdownButton from './../DropdownButton/DropdownButton';
 
 class SearchNumber extends Component{
-    constructor(props){
-        super(props);
-        this.handleGetQuery = this.handleGetQuery.bind(this);
-        this.state = {
-            sqlQueryStatement: this.props.searchTerm
-        };
-    }
-    
-    handleGetQuery(){
-        
-    }
-    
     render(){
     return(
         <div className="flex">
@@ -37,7 +25,7 @@ class SearchNumber extends Component{
                    placeholder="100" />
         </div>
             
-    );
+        );
     }
 };
 
