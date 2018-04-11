@@ -31,7 +31,7 @@ class ButtonRow extends Component{
     render(){
         const searchWord = (
                 <SearchWord subjectFields={this.props.subjectFields}
-                            searchWord={this.state.value}
+                            searchTermStart={this.state.value}
                             sqlItems={this.props.sqlItems}
                             verbWords={this.props.verbWords}
                             verbNumbers={this.props.verbNumbers}
@@ -39,7 +39,7 @@ class ButtonRow extends Component{
         
         const searchNumber = (
                 <SearchNumber subjectFields={this.props.subjectFields}
-                              searchWord={this.state.value}
+                              searchTermStart={this.state.value}
                               sqlItems={this.props.sqlItems}
                               verbWords={this.props.verbWords}
                               verbNumbers={this.props.verbNumbers}
