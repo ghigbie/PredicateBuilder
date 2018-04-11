@@ -100,5 +100,6 @@ const sqlItems = [
 
 const verbWords = ['is' , 'starts with', 'does not start with', 'equals', 'does not equal', 'contains', 'does not contain', 'in list', 'not in list', 'contains all'];
 const verbNumbers = ['range', 'less than or equal', 'equals', 'does not equal', 'greater than or equal'];
+const bools = [true, false, false, false, false, false];
 
-export {subjectFields, sqlItems, verbWords, verbNumbers};
+export {subjectFields, sqlItems, verbWords, verbNumbers, bools};
