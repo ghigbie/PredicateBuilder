@@ -15,10 +15,19 @@ class ButtonRow extends Component{
     }
     
     handleChange(e){
-        console.log('Moo1', this.state.searchTerm);
-        this.setState(
-            {searchTerm:  e.target.value}
-        );
+        let isWordEntered;
+        if(['User email','First Name','Last Name','Domain','Path Path'].includes(e.target.value)){
+            isWordEntered = true;
+        }else{
+            isWordEntered = false;
+        }
+        
+        this.setState(() => {
+              return{ 
+                searchTerm:  e.target.value,
+                isWord: isWordEntered
+              };
+        });
         console.log('Moo1', this.state.searchTerm);
     }
     
@@ -43,7 +52,7 @@ class ButtonRow extends Component{
             <div className="input-group row-item flex">
                     
                      <select value={this.state.selectValue} 
-                             onChange={this.handleChange} 
+                             onChange={(e) => {this.handleChange(e)}} 
                              className="button-row">
                 
                         <option defaultValue>Choose...</option>
