@@ -98,7 +98,85 @@ const sqlItems = [
             }
 ];
 
-const verbWords = ['is' , 'starts with', 'does not start with', 'equals', 'does not equal', 'contains', 'does not contain', 'in list', 'not in list', 'contains all'];
-const verbNumbers = ['range', 'less than or equal', 'equals', 'does not equal', 'greater than or equal'];
+const verbWords = [
+            {
+                name: 'is',
+                type: 'text'
+                
+            },
+            {
+                name: 'starts with',
+                type: 'text'
+                
+            },
+            {
+                name: 'does not start with',
+                type: 'text'
+                
+            },
+            {
+                name: 'equals',
+                type: 'text'
+                
+            },
+            {
+                name: 'does not equal',
+                type: 'text'
+                
+            },
+            {
+                name: 'contains',
+                type: 'text'
+                
+            },
+            {
+                name: 'does not contain',
+                type: 'text'
+                
+            },
+            {
+                name: 'in list',
+                type: 'text'
+                
+            },
+            {
+                name: 'not in list',
+                type: 'text'
+                
+            },
+            {
+                name: 'contains all',
+                type: 'text'
+                
+            }
+];
+
+const verbNumbers= [
+            {
+                name: 'range',
+                type: 'number'
+                
+            },
+            {
+                name: 'less than or equal',
+                type: 'number'
+                
+            },
+            {
+                name: 'equals',
+                type: 'number'
+                
+            },
+            {
+                name: 'does not equal',
+                type: 'number'
+                
+            },
+            {
+                name: 'greater than or equal',
+                type: 'number'
+                
+            }
+];
 
 export {subjectFields, sqlItems, verbWords, verbNumbers};
