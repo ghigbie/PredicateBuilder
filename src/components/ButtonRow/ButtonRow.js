@@ -6,7 +6,7 @@ import DropdownButton from './../DropdownButton/DropdownButton';
                                
 const ButtonRow = (props) => {
     return(
-        <div className="input-group">
+        <div className="input-group row-item">
                 <DropdownButton listItems={props.subjectFields}
                                 className="d-inline" />
                                 
