@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './BodySearch.css';
-import { subjectFields, sqlItems, verbWords, verbNumbers, bools} from './../../Services/data-service';
+import { subjectFields, sqlItems, verbWords, verbNumbers} from './../../Services/data-service';
 
 //import DropdownButton from './../DropdownButton/DropdownButton';
 import ButtonRow from './../ButtonRow/ButtonRow';
