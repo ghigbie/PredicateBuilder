@@ -40,12 +40,15 @@ const subjectFields = [
                 
             },
             {
-                name: 'Path Path',
+                name: 'Path',
                 type: 'text'
                 
             }
 ];
 
+const subjectNames = ['User email', 'First Name', 'Last Name','Screen Width', 'Screen Height', 'User # of Visits', 
+                      'Page Response Time (ms)', 'Domain', 'Path'];
+                      
 const sqlItems = [
             {
                 name: 'id',
@@ -97,6 +100,9 @@ const sqlItems = [
                 
             }
 ];
+
+const sqlNames= ['id', 'user_email', 'user_first_name', 'user_last_name', 'screen_widith', 'screen_height',
+                 'visit', 'page_response', 'domain', 'path'];
 
 const verbWords = [
             {
@@ -179,4 +185,4 @@ const verbNumbers= [
             }
 ];
 
-export {subjectFields, sqlItems, verbWords, verbNumbers};
+export {subjectFields, subjectNames, sqlItems, sqlNames, verbWords, verbNumbers}

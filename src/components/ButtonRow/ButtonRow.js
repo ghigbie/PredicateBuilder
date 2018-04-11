@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ButtonRow.css';
 
-import DropdownButton from './../DropdownButton/DropdownButton';
 import SearchNumber from './../SearchNumber/SearchNumber';
 import SearchWord from './../SearchWord/SearchWord';
 
@@ -17,15 +16,17 @@ class ButtonRow extends Component{
     
     handleChange(event){
         let isWordEntered;
-        if(['User email','First Name','Last Name','Domain','Path Path'].includes(event.target.value)){
+        if(['User email','First Name','Last Name','Domain','Path'].includes(event.target.value)){
             isWordEntered = true;
         }else{
             isWordEntered = false;
         }
+        console.log(isWordEntered);
         this.setState({ 
-                value:  event.target.value,
-                isWord: isWordEntered
+                isWord: isWordEntered,
+                value: event.target.value
               });
+        console.log(this.state.value);
     }
     
     render(){
