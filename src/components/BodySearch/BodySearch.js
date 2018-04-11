@@ -46,7 +46,6 @@ class BodySearch extends Component{
                                    sqlItems={this.sqlItems}
                                    verbWords={this.verbWords}
                                    verbNumbers={this.verbNumbers}
-                                   removeRow={this.handleRemoveRow}
                                    className=""/>
                     
                     </div>))}

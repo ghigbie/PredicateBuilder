@@ -9,8 +9,17 @@ class ButtonRow extends Component{
     constructor(props){
         super(props);
         this.state = {
-            isWord: true
+            isWord: true,
+            searchTerm: 'moo'
         };
+    }
+    
+    handleChange(e){
+        console.log('Moo1', this.state.searchTerm);
+        this.setState(
+            {searchTerm:  e.target.value}
+        );
+        console.log('Moo1', this.state.searchTerm);
     }
     
     render(){
@@ -33,8 +42,15 @@ class ButtonRow extends Component{
         return(
             <div className="input-group row-item flex">
                     
-                    <DropdownButton listItems={this.props.subjectFields}
-                                    className="d-inline" />
+                     <select value={this.state.selectValue} 
+                             onChange={this.handleChange} 
+                             subjectFields={this.props.subjectFields}
+                             className="button-row">
+                
+                        <option defaultValue>Choose...</option>
+                         {this.props.subjectFields.map((item, index) => <option key={index} 
+                                                                                value={item.name}>{item.name}</option>)}
+                    </select>
                     
                     {this.state.isWord ? searchWord : searchNumber}
                                                           
