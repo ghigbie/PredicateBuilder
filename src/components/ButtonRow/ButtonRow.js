@@ -10,22 +10,21 @@ class ButtonRow extends Component{
         this.handleChange = this.handleChange.bind(this);
         this.state = {
             isWord: true,
-            value: ''
+            value: 'User email'
         };
     }
     
     handleChange(event){
         let isWordEntered;
+        let newValue = event.target.value;
+        console.log(event.target.value);
         if(['User email','First Name','Last Name','Domain','Path'].includes(event.target.value)){
             isWordEntered = true;
         }else{
             isWordEntered = false;
         }
         console.log(isWordEntered);
-        this.setState({ 
-                isWord: isWordEntered,
-                value: event.target.value
-              });
+        this.setState(() => ({isWord: isWordEntered, value: newValue}));
         console.log(this.state.value);
     }
     
@@ -48,8 +47,8 @@ class ButtonRow extends Component{
         
         return(
             <div className="input-group row-item flex">
-                     <select value={this.state.value} 
-                             onChange={this.handleChange} 
+                     <select 
+                             onChange={(event) =>{this.handleChange(event)}} 
                              className="dropdown-toggle button-row">
                              
                         

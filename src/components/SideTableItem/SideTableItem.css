@@ -9,10 +9,12 @@ p.title{
 .count{
     width: 50%;
     border-right: 1px solid #959595;
-    padding-right: 3%;
+    padding-right: 10%;
 }
 
 .amount{
+    color: #007bff;
+    font-weight: 700;
     width: 50%;
     padding-left: 10%;
 }
