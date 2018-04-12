@@ -24,8 +24,7 @@ class SearchWord extends Component{
                 
                 <input className="form-control d-inline row-item input-item"
                        id="word-search"
-                       type="text" 
-                       placeholder={this.props.searchTerm} />
+                       type="text"/>
                 </div>
             </div>
                 

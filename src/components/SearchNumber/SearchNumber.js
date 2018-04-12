@@ -21,8 +21,7 @@ class SearchNumber extends Component{
                             className="d-inline row-item" />
             
             <input className="form-control d-inline row-item input-item"
-                   type="text" 
-                   placeholder="" />
+                   type="text" />
             
             <button className="btn btn-default d-inline row-item">And</button>
                     
